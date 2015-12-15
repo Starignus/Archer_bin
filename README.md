@@ -1,4 +1,5 @@
 # Scripts to run QE calcualtions in Archer#
+General Descriptio: 
 * qsub scripts for PBS system
 * DFT+U self consistent
 * Fe 110 and Fe 100 surfaces 
