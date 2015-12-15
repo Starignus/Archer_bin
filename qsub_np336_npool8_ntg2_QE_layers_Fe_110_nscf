@@ -1,0 +1,39 @@
+#!/bin/bash --login
+#
+#PBS -l walltime=24:00:00
+#PBS -l select=14
+##PBES -j oe
+#PBS -m abe -M a.blanca-romero@imperial.ac.uk
+#PBS -N Fe_110dos
+#PBS -A e05-gener-nic
+
+# Load the Quantum Espresso module
+module add espresso
+
+# Make sure any symbolic links are resolved to absolute path
+export PBS_O_WORKDIR=$(readlink -f $PBS_O_WORKDIR)
+
+# Change to the directory that the job was submitted from
+cd $PBS_O_WORKDIR
+echo '$PBS_O_WORKDIR=' $PBS_O_WORKDIR
+
+# Make sure temporary files go to the /work filesystem
+export TMPDIR=$PBS_O_WORKDIR
+export ESPRESSO_TMPDIR=$PBS_O_WORKDIR
+
+module list
+which pw.x
+which bands.x
+which dos.x
+which projwfc.x
+which plotband.x
+
+case=`echo  $PBS_O_WORKDIR`
+case=${case##*/}
+
+# Run the Quantum Espresso executable "pw.x"
+Fe_Fe_converegence_surface_layers_without_nscf.sh -m "aprun -n 336 " -a "8" -h "2" -w "95" -f "800" -g "PBE" -d "yes" > OUT_FeS_FM_RUN_U_occu_layer110Fedos
+#aprun -n 168 pw.x -npool 4 -ntg 2 -inp  $case.in >   $case.out
+
+##rm -r $case.save
+

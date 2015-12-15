@@ -1,0 +1,38 @@
+#!/bin/bash --login
+#
+#PBS -l walltime=24:00:00
+#PBS -l select=7
+##PBES -j oe
+#PBS -m abe -M a.blanca-romero@imperial.ac.uk
+#PBS -N Fe_100_ads
+#PBS -A e05-gener-nic
+
+# Load the Quantum Espresso module
+module add espresso
+
+# Make sure any symbolic links are resolved to absolute path
+export PBS_O_WORKDIR=$(readlink -f $PBS_O_WORKDIR)
+
+# Change to the directory that the job was submitted from
+cd $PBS_O_WORKDIR
+echo '$PBS_O_WORKDIR=' $PBS_O_WORKDIR
+
+# Make sure temporary files go to the /work filesystem
+export TMPDIR=$PBS_O_WORKDIR
+export ESPRESSO_TMPDIR=$PBS_O_WORKDIR
+
+module list
+which pw.x
+which bands.x
+which dos.x
+which projwfc.x
+which plotband.x
+
+case=`echo  $PBS_O_WORKDIR`
+case=${case##*/}
+
+# Run the Quantum Espresso executable "pw.x"
+time Fe_surfaces_adsorp_1x1_100.sh -m "aprun -n 168" -a "4" -h "2" -f "yes" > OUT_FE100_$case
+#prun -n 96 pw.x -nband 1 -ntg 1 -inp si.scf.david.in > si.scf.david.out
+
+##rm -r $case.save
