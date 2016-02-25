@@ -30,6 +30,9 @@ do
       l) BIN_PROJ=$OPTARG;;
       r) RMV="yes";;
       \?) echo """   resend usage:
+     Two files are needed for running the calculations:
+     A template wiht all the input file is needed with name: {directoryname}.temp
+     A tempalte without the atomic species: {directoryname}.tempstart
     -x  path to the pw.x binary (if not in the \$PATH)
     -m  MPI driver with options (i.e. "mpirun -np 8")
     -a  Number of pools for scaling kpoints
