@@ -1,4 +1,12 @@
 #!/bin/sh
+# Utility to analyse the LDOS generated
+# by projwfc.x. The data for each layer
+# contribution lpdos".pdos_atm#N(X)_wfc#M(l),
+# is collected to be summed
+# up as a total LDOS per layer using 
+# the script sum_states.py
+
+
 SYSTEM=`pwd`
 SYSTEM=`basename "$SYSTEM"`
 echo $SYSTEM
