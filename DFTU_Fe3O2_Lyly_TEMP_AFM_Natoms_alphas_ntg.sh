@@ -1,5 +1,21 @@
 #!/bin/sh
 
+####################################################
+#
+# Script to calculate self-consitently the Hubbard
+# Parameter by the linear response method. 
+#
+# Response matrix is calcuated with the
+# the resp_mat_2009.f90 (r.x)  
+#
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+### Script for Gnuplot template for LDOS & PDOS with 5 or 6 rows and 1 column
+
 #### System variables and files
 #PSEUDO_DIR='/work/ablancar/QE/PSEUDO'
 PSEUDO_DIR='/work/e05/e05/ablar/QE_PSEUDO' # For Archer
@@ -48,8 +64,8 @@ do
     -z  List of perturbation alpha
     -r  Delete the folderes "results_" (i.e. -r "yes")
     -h  print this help 
-   Example:time DFTU_Fe_TEMP.sh -m "mpiexec" -w 95 -f 800 -g "PBE" -a "8" -t "3" -n "2" -s "4" -z "-0.05 0.00 0.05" (cx1)
-           time DFTU_Fe3O2_Lyly_TEMP_AFM_Natoms_alphas.sh -m "aprun -n 48" -w 95 -f 800 -g "PBE" -b "240" -a "8" -t "3" -n "40" -a "8" -s "4" -z "-0.15 -0.07 0.00 0.07 0.15" > OUTPUT_DFTULR (archer) 
+   Usage Example:DFTU_Fe_TEMP.sh -m "mpiexec" -w 95 -f 800 -g "PBE" -a "8" -t "3" -n "2" -s "4" -z "-0.05 0.00 0.05" (cx1)
+                 DFTU_Fe3O2_Lyly_TEMP_AFM_Natoms_alphas.sh -m "aprun -n 48" -w 95 -f 800 -g "PBE" -b "240" -a "8" -t "3" -n "40" -a "8" -s "4" -z "-0.15 -0.07 0.00 0.07 0.15" > OUTPUT_DFTULR (archer) 
  """
      exit 1  ;;
    esac

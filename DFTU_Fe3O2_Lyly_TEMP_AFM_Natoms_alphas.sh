@@ -1,5 +1,21 @@
 #!/bin/sh
 
+####################################################
+#
+# Script to calculate self-consitently the Hubbard
+# Parameter by the linear response method. 
+#
+# Response matrix is calcuated with the
+# the resp_mat_2009.f90 (r.x)  
+#
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################
+
 #### System variables and files
 #PSEUDO_DIR='/work/ablancar/QE/PSEUDO'
 PSEUDO_DIR='/work/e05/e05/ablar/QE_PSEUDO' # For Archer

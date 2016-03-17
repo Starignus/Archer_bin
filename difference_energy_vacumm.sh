@@ -1,5 +1,21 @@
 #!/bin/sh
 #
+#
+#######################################################
+#
+# Script that reads ouputs from any converegence_surface_layer.sh
+# scripts to calculated the diference of energy when increasing
+# the number of layers.
+#
+#######################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################
+
 
 #Difference from E(N)-E(last)
 cat NVsEnergyRy.out | awk '{a[NR]=$1}END {for(i=1;i<NR+1;i++)print a[i]-a[NR]}' | sed '$d' > Difference_Ry_finalenergy.out

@@ -1,5 +1,22 @@
 #!/usr/bin/env python
 # encoding: utf-8
+
+
+######################################################
+#
+# Calcuating interlayer spacig in the slab
+# after relaxation.
+#
+#######################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+#######################################################
+
+
 import sys
 
 def parse_line(line):

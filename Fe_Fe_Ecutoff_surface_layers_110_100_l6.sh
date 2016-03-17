@@ -1,7 +1,17 @@
 #!/bin/sh
 #
-# Convergence test for charge density/dual dependence
-# once is known the wavefunction cutoff
+####################################################################
+#
+# Convergence test for Ecutoff energy for a Fe slab of 6 layers
+#  
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
 ####################################################################
 
 #### Specify these variables based on your environment

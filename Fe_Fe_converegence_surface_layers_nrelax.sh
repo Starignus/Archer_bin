@@ -1,7 +1,18 @@
 #!/bin/sh
+####################################################################
 #
-# Convergence test for charge density/dual dependence
-# once is known the wavefunction cutoff
+# Convergence test for charge density when increasing nummber of layers
+# once is known the wavefunction cutoff (relaxation
+# and nscf for PDOS)
+# 
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
 ####################################################################
 
 #### Specify these variables based on your environment
