@@ -1,7 +1,20 @@
 #!/bin/sh
 #
-# Convergence test for charge density/dual dependence
-# once is known the wavefunction cutoff
+####################################################################
+#
+# Script to launch realaxtion of the Fe(100) surface. There are two
+# files needed to start the excecution: The file.temp that contains
+# the template of the input file for Quantum Espresso and the file.tempstart
+# contains the the same data as file.temp with exeption of the atomic
+# postions, lattice vectors, and k-mesh.
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
 ####################################################################
 
 #### Specify these variables based on your environment

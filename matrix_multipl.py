@@ -1,5 +1,21 @@
 #!/usr/bin/python
 # encoding: utf-8
+
+#
+####################################################################
+#
+# Multiplication of 3x3 matrices
+# Usage: ./matrix_multipl_2.py matrixA.dat matrixB.dat
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
+
 import numpy
 
 #function that changes a line into a vector of floats

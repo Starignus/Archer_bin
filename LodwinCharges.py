@@ -1,6 +1,18 @@
 #!/usr/bin/env python
-# Sum of Lodwin charges in the Slab: Total Charges, Substrate and adsorbate
 
+#
+####################################################################
+#
+# Sum of Lodwin charges in the Slab: Total Charges, Substrate and adsorbate
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
 
 filename  = raw_input('QE_pdos.out file: ')
 adsorbate = raw_input('If there is an adsorbate, True or False: ')

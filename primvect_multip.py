@@ -1,5 +1,20 @@
 #!/usr/bin/python
 # encoding: utf-8
+#
+####################################################################
+#
+# Script to multiply the primitive lattice vectors from QE for alat
+# and tranform to angstroms.
+# Usage: ./primvect_multip.py prim_vect.dat 
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
 
 def read_alat_line(file):
     # assumes that the next line in the file something like:

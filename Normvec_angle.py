@@ -1,5 +1,21 @@
 #!/usr/bin/python
 # encoding: utf-8
+#
+####################################################################
+#
+# Script that calcualtes the lattice parameters and angles between 
+# the primitive vectors fron the primitive lattice vector from QE.
+# Usage: ./Normvec_angle.py latt_vect.in alat
+#         ./Normvec_angle.py latt_vect.in 14.23
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
 
 #funci?n para que lea los vectores y los transforme a float
 def read_vector(file):

@@ -1,5 +1,19 @@
 #!/bin/sh
 
+#
+####################################################################
+#
+# Script that check the status of a job in the queue in Archer 
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
+
 while getopts x: opt
 do
    case "$opt" in

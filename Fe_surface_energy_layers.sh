@@ -1,7 +1,17 @@
 #!/bin/sh
 #
-# Convergence test for charge density/dual dependence
-# once is known the wavefunction cutoff
+####################################################################
+#
+# Script to get the Surface energy of Fe Slabs: It Analyses the
+# N layers Vs Energy outputs
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
 ####################################################################
 
 

@@ -1,6 +1,24 @@
 #!/usr/bin/python
 # encoding: utf-8
 
+#
+####################################################################
+#
+# Script to multiply the primitive lattice vectors from QE for alat.
+# outpur is as required bands_inter_2.x (from bands_2.F90 in Desktop 
+#  or http://www.tcm.phy.cam.ac.uk/~jry20/bands.html)
+# Usage: ./primvect_multip.py prim_vect.dat 
+#
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
+
+
 def read_alat_line(file):
     # assumes that the next line in the file something like:
     #   'CELL_PARAMETERS (alat= 12.51221877)'

@@ -1,6 +1,16 @@
 #!/bin/sh
 #
-# Runing for relaxing a structure and PDOS
+# #
+####################################################################
+#Author: Dr. Ariadna Blanca Romero
+#        Postdoctoral Research Associate
+#        Imperial College London
+#        Thomas Young Centre-Chemestry
+#        ariadna@starignus.com or starignus@gmail.com
+#        https://github.com/Starignus
+####################################################################
+
+# Runing for relaxing a structure of S alpha (primitive) and PDOS
 ####################################################################
 
 #### Specify these variables based on your environment
