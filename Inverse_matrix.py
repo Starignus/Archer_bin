@@ -4,7 +4,7 @@
 ####################################################################
 #
 # Inverse of a  3x3 matrices
-# Usage: ./matrix_multipl_2.py matrixA.dat matrixB.dat
+# Usage: ./Inverse_matrix.py matrixA.dat
 #
 ####################################################################
 #Author: Dr. Ariadna Blanca Romero
